@@ -8,8 +8,6 @@ use Proxy\Config;
 use Proxy\Http\Request;
 use Proxy\Proxy;
 
-$GLOBALS["is_html"] = 0;
-
 if (!function_exists('curl_version')) {
     die("cURL extension is not loaded!");
 }

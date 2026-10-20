@@ -41,7 +41,7 @@ class UrlFormPlugin extends AbstractPlugin
 
         // we attach url_form only if this is a html response
         if (!is_html($response->headers->get('content-type'))) {
-			if (preg_match("/^text\/", $response->headers->get('content-type'))) {
+			if (preg_match("/^(text|script)\/", $response->headers->get('content-type'))) {
 				$output = $response->getContent();
 				if ($output) {
 					$output = translit($output);
