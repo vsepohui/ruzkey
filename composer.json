@@ -1,14 +1,14 @@
 {
-	"name": "athlon1600/php-proxy-app",
+	"name": "vsepohui/ruzkey",
 	"type": "project",
 	"license": "MIT",
 	"description": "Web proxy application project powered by PHP-Proxy library",
 	"keywords": ["php proxy application", "php proxy web", "proxy script", "php web proxy", "web proxy"],
-	"homepage": "https://www.php-proxy.com/",
+	"homepage": "https://ruzkey.ru/",
 	"require": {
 		"php": "^7.4|^8.0",
 		"ext-curl": "*",
-		"athlon1600/php-proxy": "^5.0.1"
+		"vsepohui/ruzeky": "^v4.0.0"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
