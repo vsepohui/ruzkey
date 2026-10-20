@@ -19,7 +19,7 @@ class UrlFormPlugin extends AbstractPlugin
 			if (preg_match("/^text\/", $response->headers->get('content-type'))) {
 				$output = $response->getContent();
 				if ($output) {
-					$output = Transliterator::transliterate($output);
+					$output = transliterator_transliterate($output);
 				}
 				$response->setContent($output);
 			}
@@ -44,7 +44,7 @@ class UrlFormPlugin extends AbstractPlugin
         // does the html page contain <body> tag, if so insert our form right after <body> tag starts
         $output = preg_replace('@<body.*?>@is', '$0' . PHP_EOL . $url_form, $output, 1, $count);
         
-		$output = Transliterator::transliterate($output);
+		$output = transliterator_transliterate($output);
 
         // <body> tag was not found, just put the form at the top of the page
         if ($count == 0) {
