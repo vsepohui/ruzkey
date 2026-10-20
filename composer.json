@@ -2,8 +2,8 @@
 	"name": "vsepohui/ruzkey",
 	"type": "project",
 	"license": "MIT",
-	"description": "Web proxy application project powered by PHP-Proxy library",
-	"keywords": ["php proxy application", "php proxy web", "proxy script", "php web proxy", "web proxy"],
+	"description": "Ruzkey Web proxy",
+	"keywords": ["php ruzkey proxy application", "php ruzkey proxy web", "proxy ruzkey script", "php ruzkey web proxy", "ruzkey web proxy"],
 	"homepage": "https://ruzkey.ru/",
 	"require": {
 		"php": "^7.4|^8.0",
