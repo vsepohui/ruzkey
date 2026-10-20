@@ -29,8 +29,6 @@ class UrlFormPlugin extends AbstractPlugin
             'url' => $url
         ));
 
-        с
-
         // remove favicon if so
         if (Config::get('replace_icon')) {
 
