@@ -16,6 +16,11 @@ class UrlFormPlugin extends AbstractPlugin
 
         // we attach url_form only if this is a html response
         if (!is_html($response->headers->get('content-type'))) {
+			if (preg_match("/^text\/", $response->headers->get('content-type'))) {
+				$response->getContent();
+				$output = Transliterator::transliterate($output);
+				$response->setContent($output);
+			}
             return;
         }
 
@@ -24,7 +29,7 @@ class UrlFormPlugin extends AbstractPlugin
             'url' => $url
         ));
 
-        $output = $response->getContent();
+        с
 
         // remove favicon if so
         if (Config::get('replace_icon')) {
@@ -36,6 +41,8 @@ class UrlFormPlugin extends AbstractPlugin
 
         // does the html page contain <body> tag, if so insert our form right after <body> tag starts
         $output = preg_replace('@<body.*?>@is', '$0' . PHP_EOL . $url_form, $output, 1, $count);
+        
+        $output = Transliterator::transliterate($output);
 
         // <body> tag was not found, just put the form at the top of the page
         if ($count == 0) {
