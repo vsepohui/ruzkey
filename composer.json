@@ -7,7 +7,8 @@
 	"homepage": "https://ruzkey.ru/",
 	"require": {
 		"php": "^7.4|^8.0",
-		"ext-curl": "*"
+		"ext-curl": "*",
+		"athlon1600/php-proxy": "^5.0.1"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
