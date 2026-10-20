@@ -78,6 +78,7 @@ html body {
 	<!-- [END] -->
 	
 	</div>
+	<footer>By <a href="https://trunaev.ru">Ivan Trunaev</a></footer>
 	
 </div>
 
