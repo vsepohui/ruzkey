@@ -35,7 +35,7 @@ server {
 Reload nginx:
 
 ```
-sudo /etc/init.d/nginx/reload
+sudo /etc/init.d/nginx reload
 ```
 
 Open browser:
