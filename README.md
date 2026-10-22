@@ -17,12 +17,9 @@ Edit /etc/nginx/sites-enabled/default  (need sudo!):
 
 ```
 server {
-	listen 80 default_server;
+    listen 80 default_server;
 
-    client_max_body_size 8M;
-
-
-	# !!!!!!!!! PATH NEED BE FIXED !!!!!!!!!!!!!!!!
+    # !!!!!!!!! PATH NEED BE FIXED !!!!!!!!!!!!!!!!
     root /home/trunaev/ruzkey;
     index index.php;
 
@@ -32,8 +29,6 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         include fastcgi_params;
     }
-
-
 }
 ```
 
