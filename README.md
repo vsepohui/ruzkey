@@ -21,6 +21,8 @@ server {
 
     client_max_body_size 8M;
 
+
+	# !!!!!!!!! PATH NEED BE FIXED !!!!!!!!!!!!!!!!
     root /home/trunaev/ruzkey;
     index index.php;
 
